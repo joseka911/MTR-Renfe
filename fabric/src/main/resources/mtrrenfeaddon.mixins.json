@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "es.joseka.renfemtr.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
