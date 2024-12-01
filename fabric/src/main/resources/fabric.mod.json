@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "renfe",
-	"version": "${version}",
+	"version": "4.0.0-beta-1",
 	"name": "MTR Renfe Addon",
 	"description": "Renfe addon is now available for minecraft transit Railway Mod",
 	"authors": [
@@ -16,21 +16,17 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"es.joseka.renfemtr.fabric.MainFabric"
+			"es.joseka.renfemtr.init.MainFabric"
 		],
 		"client": [
-			"es.joseka.renfemtr.fabric.MainFabricClient"
-		],
-		"modmenu": [
-			"es.joseka.renfemtr.fabric.ModMenuApiImpl"
+			"es.joseka.renfemtr.init.MainFabricClient"
 		]
 	},
 	"mixins": [
-		"mtrrenfeaddon.mixins.json"
 	],
 	"depends": {
 		"fabric": "*",
-		"minecraft": "*",
-		"mtr": "*"
+		"minecraft": "1.20.4",
+		"mtr": ">=4.0.0-beta.12 <4.1"
 	}
 }
