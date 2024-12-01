@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[36,)"
+license = "MIT"
+issueTrackerURL="https://github.com/joseka911/MTR-Renfe/issues"
+
+[[mods]]
+modId = "renfe"
+version = "@version@"
+displayName = "MTR Renfe Addon"
+displayURL = "https://github.com/joseka911/MTR-Renfe"
+authors = "Joseka"
+description = "Renfe addon is now available for minecraft transit Railway Mod"
+logoFile = "icon.png"
+
+
+[[dependencies.renfe]]
+modId = "forge"
+mandatory = true
+versionRange = "[36,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.renfe]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[@minecraft@]"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.renfe]]
+modId = "mtr"
+mandatory = true
+versionRange = "[4.0.0-beta-11,4.1)"
+ordering = "AFTER"
+side = "BOTH"
