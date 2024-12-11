@@ -13,8 +13,8 @@ String default_minecraft_version = "1.19.2"
 String minecraft_version = rootProject.properties.containsKey("buildVersion") ? rootProject.getProperties().get("buildVersion") : default_minecraft_version
 int minecraft_main_version = minecraft_version.split("\\.")[1] as int
 String minecraft_version_int = minecraft_version.split("\\.")[0] +
-    minecraft_version.split("\\.")[1].padLeft(2, '0') +
-    (minecraft_version.split("\\.").length > 2 ? minecraft_version.split("\\.")[2].padLeft(2, '0') : "00")
+		minecraft_version.split("\\.")[1].padLeft(2, '0') +
+		(minecraft_version.split("\\.").length > 2 ? minecraft_version.split("\\.")[2].padLeft(2, '0') : "00")
 boolean is_1_19_3 = minecraft_version == "1.19.3"
 String parchment_version = is_1_19_3 ? "N/A" : new XmlSlurper().parse("https://ldtteam.jfrog.io/artifactory/parchmentmc-internal/org/parchmentmc/data/parchment-${minecraft_version}/maven-metadata.xml").versioning.release
 
@@ -142,7 +142,7 @@ allprojects {
 			options.release.set(17)
 		}
 
-        options.compilerArgs += ['-Xplugin:Manifold', '-AMC_VERSION=' + minecraft_version_int]
+		options.compilerArgs += ['-Xplugin:Manifold', '-AMC_VERSION=' + minecraft_version_int]
 	}
 
 	afterEvaluate {

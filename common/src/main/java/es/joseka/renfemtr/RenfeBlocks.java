@@ -1,5 +1,6 @@
 package es.joseka.renfemtr;
 
+import es.joseka.renfemtr.Blocks.PlatformNumber;
 import es.joseka.renfemtr.Blocks.RenfeSignals;
 import mtr.RegistryObject;
 import mtr.block.BlockPlatform;
@@ -70,6 +71,10 @@ public interface RenfeBlocks{
     RegistryObject<Block> SIGNAL_120_ADVERTISEMENT_TEMP_ORANGE = new RegistryObject<>(() -> new RenfeSignals(BlockBehaviour.Properties.of(Material.METAL)));
     //platform
     RegistryObject<Block> PLATFORM_ES_1 = new RegistryObject<>(() -> new BlockPlatform(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_YELLOW).requiresCorrectToolForDrops().strength(2), false));
+    RegistryObject<Block> PLATFORM_ES_2 = new RegistryObject<>(() -> new BlockPlatform(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_YELLOW).requiresCorrectToolForDrops().strength(2), false));
     //tickets machines
     RegistryObject<Block> RENFE_TICKET_MACHINE_1 = new RegistryObject<>(() -> new BlockTicketMachine(BlockBehaviour.Properties.of(Material.METAL)));
+    //Platforms numbers
+    RegistryObject<Block> PLAT_ADIF_NUMBER = new RegistryObject<>(() -> new PlatformNumber(BlockBehaviour.Properties.of(Material.METAL)));
+    RegistryObject<Block> PLAT_CERCANIAS_NUMBER = new RegistryObject<>(() -> new PlatformNumber(BlockBehaviour.Properties.of(Material.METAL)));
 }

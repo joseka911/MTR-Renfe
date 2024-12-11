@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [500, 500],
 	"textures": {
-		"0": "renfe:block/ticket_machine_01",
-		"particle": "renfe:block/ticket_machine_01"
+		"0": "renfe:block/ticket_machine_1",
+		"particle": "renfe:block/ticket_machine_1"
 	},
 	"elements": [
 		{

@@ -39,5 +39,9 @@
   "block.renfe.signal_trench": "Señal de trinchera",
   "block.renfe.signal_end_temp": "Señal de finalización de límite temporal",
   "block.renfe.platform_es_1": "Plataforma renfe 1",
-  "block.renfe.renfe_ticket_machine_1": "Máquina expendedora de billetes moderno"
+  "block.renfe.platform_es_2": "Plataforma renfe 2",
+  "block.renfe.renfe_ticket_machine_1": "Máquina expendedora de billetes moderno",
+  "block.renfe.plat_adif_number": "Señal de número de andén (ADIF)",
+  "block.renfe.plat_cercanias_number": "Señal de número de andén (CERCANIAS)",
+  "item.renfe.plat_number_changer": "Cambiar señal de número de anden"
 }

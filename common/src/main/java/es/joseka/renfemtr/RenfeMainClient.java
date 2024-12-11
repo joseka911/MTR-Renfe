@@ -33,6 +33,7 @@ public class RenfeMainClient {
 		RegistryClient.registerBlockRenderType(RenderType.cutout(), RenfeBlocks.SIGNAL_120_ADVERTISEMENT_ORANGE.get());
 		RegistryClient.registerBlockRenderType(RenderType.cutout(), RenfeBlocks.SIGNAL_120_PREADVERTISEMENT.get());
 		RegistryClient.registerBlockRenderType(RenderType.cutout(), RenfeBlocks.PLATFORM_ES_1.get());
+		RegistryClient.registerBlockRenderType(RenderType.cutout(), RenfeBlocks.PLATFORM_ES_2.get());
 	}
 
 }

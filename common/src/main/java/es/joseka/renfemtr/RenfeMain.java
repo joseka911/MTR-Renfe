@@ -49,6 +49,10 @@ public class RenfeMain {
 		registries.registerBlockAndItem("signal_120_orange", RenfeBlocks.SIGNAL_120_ORANGE, RenfeCreativeModTab.SIGNALS);
 		registries.registerBlockAndItem("signal_120_advertisement_orange", RenfeBlocks.SIGNAL_120_ADVERTISEMENT_ORANGE, RenfeCreativeModTab.SIGNALS);
 		registries.registerBlockAndItem("platform_es_1", RenfeBlocks.PLATFORM_ES_1, RenfeCreativeModTab.DECORATIONS);
+		registries.registerBlockAndItem("platform_es_2", RenfeBlocks.PLATFORM_ES_2, RenfeCreativeModTab.DECORATIONS);
 		registries.registerBlockAndItem("renfe_ticket_machine_1", RenfeBlocks.RENFE_TICKET_MACHINE_1, RenfeCreativeModTab.DECORATIONS);
+		registries.registerBlockAndItem("plat_adif_number", RenfeBlocks.PLAT_ADIF_NUMBER, RenfeCreativeModTab.DECORATIONS);
+		registries.registerBlockAndItem("plat_cercanias_number", RenfeBlocks.PLAT_CERCANIAS_NUMBER, RenfeCreativeModTab.DECORATIONS);
+		registries.registerItem("plat_number_changer", RenfeItems.PLAT_NUMBER_CHANGER, RenfeCreativeModTab.DECORATIONS);
 	}
 }
