@@ -12,7 +12,7 @@ public class Init {
 	public static final Registry REGISTRY = new Registry();
 	public static void init() {
 		Blocks.init();
-		//Items.init();
+		Items.init();
 		//BlockEntityTypes.init();
 		//SoundEvents.init();
 		//DummyClass.enableLogging();

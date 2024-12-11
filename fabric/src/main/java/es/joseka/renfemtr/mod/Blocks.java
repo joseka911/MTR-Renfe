@@ -2,8 +2,11 @@ package es.joseka.renfemtr.mod;
 
 import org.mtr.mapping.holder.Block;
 import org.mtr.mapping.holder.Identifier;
+import org.mtr.mapping.mapper.BlockHelper;
 import org.mtr.mapping.registry.BlockRegistryObject;
 import es.joseka.renfemtr.mod.blocks.*;
+import org.mtr.mod.block.BlockPlatform;
+import org.mtr.mod.block.BlockTicketMachine;
 
 public class Blocks{
     static {
@@ -44,45 +47,57 @@ public class Blocks{
         SIGNAL_120_PREADVERTISEMENT = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "signal_120_pre_advertisement"), () -> new Block(new RenfeSignals()), CreativeModeTabs.SIGNALS);
         SIGNAL_120_ORANGE = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "signal_120_orange"), () -> new Block(new RenfeSignals()), CreativeModeTabs.SIGNALS);
         SIGNAL_120_ADVERTISEMENT_ORANGE = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "signal_120_advertisement_orange"), () -> new Block(new RenfeSignals()), CreativeModeTabs.SIGNALS);
+        PLAT_ADIF_NUMBER = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "plat_adif_number"), () -> new Block(new PlatformsNumber()), CreativeModeTabs.SIGNALS);
+        PLAT_CERCANIAS_NUMBER = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "plat_cercanias_number"), () -> new Block(new PlatformsNumber()), CreativeModeTabs.SIGNALS);
+        PLATFORM_ES_1 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "platform_es_1"), () -> new Block(new BlockPlatform(BlockHelper.createBlockSettings(false), false)), CreativeModeTabs.DECORATIONS);
+        PLATFORM_ES_2 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "platform_es_2"), () -> new Block(new BlockPlatform(BlockHelper.createBlockSettings(false), false)), CreativeModeTabs.DECORATIONS);
+        RENFE_TICKET_MACHINE_1 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "renfe_ticket_machine_1"), () -> new Block(new BlockTicketMachine(BlockHelper.createBlockSettings(true, blockState -> 5))), CreativeModeTabs.DECORATIONS);
+
     }
 
-public static final BlockRegistryObject SIGNAL_TRENCH;
-public static final BlockRegistryObject SIGNAL_END_TEMP;
-public static final BlockRegistryObject SIGNAL_20;
-public static final BlockRegistryObject SIGNAL_20_ADVERTISEMENT;
-public static final BlockRegistryObject SIGNAL_20_ADVERTISEMENT_TEMP;
-public static final BlockRegistryObject SIGNAL_20_PREADVERTISEMENT;
-public static final BlockRegistryObject SIGNAL_20_PREADVERTISEMENT_TEMP;
-public static final BlockRegistryObject SIGNAL_20_ORANGE;
-public static final BlockRegistryObject SIGNAL_20_TEMP;
-public static final BlockRegistryObject SIGNAL_20_ADVERTISEMENT_ORANGE;
-public static final BlockRegistryObject SIGNAL_20_TEMP_ORANGE;
-public static final BlockRegistryObject SIGNAL_20_ADVERTISEMENT_TEMP_ORANGE;
-public static final BlockRegistryObject SIGNAL_40;
-public static final BlockRegistryObject SIGNAL_40_ADVERTISEMENT;
-public static final BlockRegistryObject SIGNAL_40_ADVERTISEMENT_TEMP;
-public static final BlockRegistryObject SIGNAL_40_PREADVERTISEMENT;
-public static final BlockRegistryObject SIGNAL_40_PREADVERTISEMENT_TEMP;
-public static final BlockRegistryObject SIGNAL_40_ORANGE;
-public static final BlockRegistryObject SIGNAL_40_TEMP;
-public static final BlockRegistryObject SIGNAL_40_ADVERTISEMENT_ORANGE;
-public static final BlockRegistryObject SIGNAL_40_TEMP_ORANGE;
-public static final BlockRegistryObject SIGNAL_40_ADVERTISEMENT_TEMP_ORANGE;
-public static final BlockRegistryObject SIGNAL_60;
-public static final BlockRegistryObject SIGNAL_60_ADVERTISEMENT;
-public static final BlockRegistryObject SIGNAL_60_PREADVERTISEMENT;
-public static final BlockRegistryObject SIGNAL_60_ORANGE;
-public static final BlockRegistryObject SIGNAL_60_ADVERTISEMENT_ORANGE;
-public static final BlockRegistryObject SIGNAL_80;
-public static final BlockRegistryObject SIGNAL_80_ADVERTISEMENT;
-public static final BlockRegistryObject SIGNAL_80_PREADVERTISEMENT;
-public static final BlockRegistryObject SIGNAL_80_ORANGE;
-public static final BlockRegistryObject SIGNAL_80_ADVERTISEMENT_ORANGE;
-public static final BlockRegistryObject SIGNAL_120;
-public static final BlockRegistryObject SIGNAL_120_ADVERTISEMENT;
-public static final BlockRegistryObject SIGNAL_120_PREADVERTISEMENT;
-public static final BlockRegistryObject SIGNAL_120_ORANGE;
-public static final BlockRegistryObject SIGNAL_120_ADVERTISEMENT_ORANGE;
+    public static final BlockRegistryObject SIGNAL_TRENCH;
+    public static final BlockRegistryObject SIGNAL_END_TEMP;
+    public static final BlockRegistryObject SIGNAL_20;
+    public static final BlockRegistryObject SIGNAL_20_ADVERTISEMENT;
+    public static final BlockRegistryObject SIGNAL_20_ADVERTISEMENT_TEMP;
+    public static final BlockRegistryObject SIGNAL_20_PREADVERTISEMENT;
+    public static final BlockRegistryObject SIGNAL_20_PREADVERTISEMENT_TEMP;
+    public static final BlockRegistryObject SIGNAL_20_ORANGE;
+    public static final BlockRegistryObject SIGNAL_20_TEMP;
+    public static final BlockRegistryObject SIGNAL_20_ADVERTISEMENT_ORANGE;
+    public static final BlockRegistryObject SIGNAL_20_TEMP_ORANGE;
+    public static final BlockRegistryObject SIGNAL_20_ADVERTISEMENT_TEMP_ORANGE;
+    public static final BlockRegistryObject SIGNAL_40;
+    public static final BlockRegistryObject SIGNAL_40_ADVERTISEMENT;
+    public static final BlockRegistryObject SIGNAL_40_ADVERTISEMENT_TEMP;
+    public static final BlockRegistryObject SIGNAL_40_PREADVERTISEMENT;
+    public static final BlockRegistryObject SIGNAL_40_PREADVERTISEMENT_TEMP;
+    public static final BlockRegistryObject SIGNAL_40_ORANGE;
+    public static final BlockRegistryObject SIGNAL_40_TEMP;
+    public static final BlockRegistryObject SIGNAL_40_ADVERTISEMENT_ORANGE;
+    public static final BlockRegistryObject SIGNAL_40_TEMP_ORANGE;
+    public static final BlockRegistryObject SIGNAL_40_ADVERTISEMENT_TEMP_ORANGE;
+    public static final BlockRegistryObject SIGNAL_60;
+    public static final BlockRegistryObject SIGNAL_60_ADVERTISEMENT;
+    public static final BlockRegistryObject SIGNAL_60_PREADVERTISEMENT;
+    public static final BlockRegistryObject SIGNAL_60_ORANGE;
+    public static final BlockRegistryObject SIGNAL_60_ADVERTISEMENT_ORANGE;
+    public static final BlockRegistryObject SIGNAL_80;
+    public static final BlockRegistryObject SIGNAL_80_ADVERTISEMENT;
+    public static final BlockRegistryObject SIGNAL_80_PREADVERTISEMENT;
+    public static final BlockRegistryObject SIGNAL_80_ORANGE;
+    public static final BlockRegistryObject SIGNAL_80_ADVERTISEMENT_ORANGE;
+    public static final BlockRegistryObject SIGNAL_120;
+    public static final BlockRegistryObject SIGNAL_120_ADVERTISEMENT;
+    public static final BlockRegistryObject SIGNAL_120_PREADVERTISEMENT;
+    public static final BlockRegistryObject SIGNAL_120_ORANGE;
+    public static final BlockRegistryObject SIGNAL_120_ADVERTISEMENT_ORANGE;
+    public static final BlockRegistryObject PLAT_ADIF_NUMBER;
+    public static final BlockRegistryObject PLAT_CERCANIAS_NUMBER;
+    public static final BlockRegistryObject PLATFORM_ES_1;
+    public static final BlockRegistryObject PLATFORM_ES_2;
+    public static final BlockRegistryObject RENFE_TICKET_MACHINE_1;
+
 
 
 public static void init() {

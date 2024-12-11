@@ -4,10 +4,33 @@ import org.mtr.mapping.holder.RenderLayer;
 import org.mtr.mapping.registry.RegistryClient;
 
 public class InitClient {
+	public static final RegistryClient REGISTRY_CLIENT = new RegistryClient(Init.REGISTRY);
 
 	public static void init() {
-		//add transparency at circle signal 20 km/h
-		//REGISTRY_CLIENT.init();
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_20_ADVERTISEMENT);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_20_ADVERTISEMENT_ORANGE);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_20_ADVERTISEMENT_TEMP);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_20_ADVERTISEMENT_TEMP_ORANGE);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_20_PREADVERTISEMENT);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_20_PREADVERTISEMENT_TEMP);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_40_ADVERTISEMENT);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_40_ADVERTISEMENT_ORANGE);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_40_ADVERTISEMENT_TEMP);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_40_ADVERTISEMENT_TEMP_ORANGE);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_40_PREADVERTISEMENT);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_40_PREADVERTISEMENT_TEMP);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_60_ADVERTISEMENT);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_60_ADVERTISEMENT_ORANGE);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_60_PREADVERTISEMENT);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_80_ADVERTISEMENT);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_80_ADVERTISEMENT_ORANGE);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(),Blocks.SIGNAL_80_PREADVERTISEMENT);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.SIGNAL_120_ADVERTISEMENT);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.SIGNAL_120_ADVERTISEMENT_ORANGE);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.SIGNAL_120_PREADVERTISEMENT);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.PLATFORM_ES_1);
+		REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.PLATFORM_ES_2);
+		REGISTRY_CLIENT.init();
 	}
 
 }

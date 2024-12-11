@@ -39,5 +39,9 @@
   "block.renfe.signal_trench": "Trench signal",
   "block.renfe.signal_end_temp": "Temporary limit ending signal",
   "block.renfe.platform_es_1": "RENFE platform 1",
-  "block.renfe.renfe_ticket_machine_1": "Modern ticket vending machine"
+  "block.renfe.platform_es_2": "RENFE platform 2",
+  "block.renfe.renfe_ticket_machine_1": "Modern ticket vending machine",
+  "block.renfe.plat_adif_number": "Signal platform (ADIF)",
+  "block.renfe.plat_cercanias_number": "Signal platform (CERCANIAS)",
+  "item.renfe.plat_number_changer": "Change sign number platform"
 }
