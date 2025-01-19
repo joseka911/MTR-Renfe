@@ -43,5 +43,6 @@
   "block.renfe.renfe_ticket_machine_1": "Modern ticket vending machine",
   "block.renfe.plat_adif_number": "Signal platform (ADIF)",
   "block.renfe.plat_cercanias_number": "Signal platform (CERCANIAS)",
+  "block.renfe.buffer_stop": "Buffer Stop",
   "item.renfe.plat_number_changer": "Change sign number platform"
 }

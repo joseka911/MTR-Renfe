@@ -52,6 +52,7 @@ public class Blocks{
         PLATFORM_ES_1 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "platform_es_1"), () -> new Block(new BlockPlatform(BlockHelper.createBlockSettings(false), false)), CreativeModeTabs.DECORATIONS);
         PLATFORM_ES_2 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "platform_es_2"), () -> new Block(new BlockPlatform(BlockHelper.createBlockSettings(false), false)), CreativeModeTabs.DECORATIONS);
         RENFE_TICKET_MACHINE_1 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "renfe_ticket_machine_1"), () -> new Block(new BlockTicketMachine(BlockHelper.createBlockSettings(true, blockState -> 5))), CreativeModeTabs.DECORATIONS);
+        BUFFER_STOP = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "buffer_stop"), () -> new Block(new BufferStop()), CreativeModeTabs.DECORATIONS);
 
     }
 
@@ -97,6 +98,7 @@ public class Blocks{
     public static final BlockRegistryObject PLATFORM_ES_1;
     public static final BlockRegistryObject PLATFORM_ES_2;
     public static final BlockRegistryObject RENFE_TICKET_MACHINE_1;
+    public static final BlockRegistryObject BUFFER_STOP;
 
 
 
